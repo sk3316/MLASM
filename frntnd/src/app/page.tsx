@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input"
+// import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 
 import {
   Card,
@@ -22,22 +25,26 @@ import {
 
 export default function Home() {
   return (
-    <main className="px-20 bg-slate-500">
+    <main>
+    <div className=" px-20 bg-purple-900">
       <Card className="bg-pink-100">
         <CardHeader>
-          <CardTitle>Anticancer and scmall molecules</CardTitle>
+          <CardTitle>Anticancer and small molecules</CardTitle>
           {/* <CardDescription>Card Description</CardDescription> */}
         </CardHeader>
-        <CardContent className="grid grid-col-2">
+        <CardContent className="grid grid-cols-2">
           <p>Content</p>
-          {/* <Image
-      src={"portfolio"}
-      width={50}
-      height={50}
-      alt="Picture of the author"
-    ></Image> */}
+          <Image
+						src='/images/portfolio.jpg'
+						alt=''
+						width={50}
+						height={50}
+						className="place-items-end "
+						// unoptimized
+            // layout = "fill"
+					></Image>
         </CardContent>
-      </Card>
+      </Card> 
       <br></br>
       <Tabs defaultValue="home" className=" bg-red-200">
         <TabsList className="flex justify-center">
@@ -49,12 +56,37 @@ export default function Home() {
         <TabsContent value="home">
           <Carousel>
             <CarouselContent>
-              <CarouselItem>honey singh</CarouselItem>
-              <CarouselItem>emiway</CarouselItem>
-              <CarouselItem>divine</CarouselItem>
+              <CarouselItem><Image
+						src = '/images/ML-flowchart.png' 
+						alt=''
+						width={500}
+						height={500}
+						className="place-items-end"
+						// unoptimized
+            // layout = "fill"
+					></Image></CarouselItem>
+              <CarouselItem><Image
+						src = '/images/portfolio.jpg'
+						alt=''
+						width={100}
+						height={100}
+						className="place-items-end "
+						// unoptimized
+            // layout = "fill"
+					></Image></CarouselItem>
+              <CarouselItem><Image
+						src='/images/portfolio.jpg'
+						alt=''
+						width={100}
+						height={100}
+						className="place-items-end "
+						// unoptimized
+            // layout = "fill"
+					></Image></CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
+          </Carousel>
             <br></br>
             <Card className="bg-pink-100">
               <CardHeader>
@@ -96,16 +128,20 @@ export default function Home() {
               </CardHeader>
              
             </Card>
-          </Carousel>
         </TabsContent>
-        <TabsContent value="services">Change your services here.</TabsContent>
+        <TabsContent value="services">
+        <div className="grid w-full max-w-sm items-center gap-1.5">
+      <Label htmlFor="picture">Picture</Label>
+      <Input id="picture" type="file" />
+    </div>
+        </TabsContent>
         <TabsContent value="document">Change your document here.</TabsContent>
         <TabsContent value="contact">Change your contact here.</TabsContent>
       </Tabs>
       <br></br>
 
-      <Card className="bg-pink-100 grid grid-cols-3">
-        <Card>
+      <Card className="grid grid-cols-3">
+        <Card className = "bg-slate-100">
         <CardHeader>
           <CardTitle>Contact</CardTitle>
           {/* <CardDescription>Card Description</CardDescription> */}
@@ -115,7 +151,7 @@ export default function Home() {
           <p>Mail_2</p>
         </CardContent>
         </Card>
-        <Card>
+        <Card className = "bg-slate-100">
         <CardHeader>
           <CardTitle>Statistics</CardTitle>
           {/* <CardDescription>Card Description</CardDescription> */}
@@ -124,7 +160,7 @@ export default function Home() {
           {/* <p>Card Content</p> */}
         </CardContent>
         </Card>
-        <Card>
+        <Card className = "bg-slate-100">
         <CardHeader>
           <CardTitle>Citation</CardTitle>
           {/* <CardDescription>Card Description</CardDescription> */}
@@ -137,14 +173,15 @@ export default function Home() {
 
       <br></br>
 
-      <Card className="bg-pink-100">
+    </div>
+      <Card className="justify-center grid px-0">
         <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
+          {/* <CardTitle>Card Title</CardTitle> */}
+          <CardDescription>Copyright © 2020.Chengdu University of TCM All rights reserved.</CardDescription>
         </CardHeader>
-        <CardContent>
+        {/* <CardContent>
           <p>Card Content</p>
-        </CardContent>
+        </CardContent> */}
       </Card>
     </main>
   );
