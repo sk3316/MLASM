@@ -26,7 +26,7 @@ import {
 export default function Home() {
   return (
     <main>
-    <div className=" px-20 bg-purple-900">
+    <div className=" px-60 bg-purple-900">
       <Card className="bg-pink-100">
         <CardHeader>
           <CardTitle>Anticancer and small molecules</CardTitle>
