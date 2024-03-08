@@ -29,16 +29,18 @@ export default function Home() {
     <div className=" px-60 bg-purple-900">
       <Card className="bg-pink-100">
         <CardHeader>
-          <CardTitle>Anticancer and small molecules</CardTitle>
+          <CardTitle className = "text-6xl">Anticancer and small molecules</CardTitle>
           {/* <CardDescription>Card Description</CardDescription> */}
         </CardHeader>
         <CardContent className="grid grid-cols-2">
-          <p>Content</p>
+          <p className = "text-2xl">Content</p>
           <Image
-						src='/images/portfolio.jpg'
+						src='/images/Types-of-blood-cancer_11zon.jpg'
 						alt=''
-						width={50}
-						height={50}
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: '80%' }} // optional
 						className="place-items-end "
 						// unoptimized
             // layout = "fill"
@@ -59,27 +61,33 @@ export default function Home() {
               <CarouselItem><Image
 						src = '/images/ML-flowchart.png' 
 						alt=''
-						width={500}
-						height={500}
-						className="place-items-end"
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} // optional
+						// className="place-items-end"
 						// unoptimized
             // layout = "fill"
 					></Image></CarouselItem>
               <CarouselItem><Image
-						src = '/images/portfolio.jpg'
+						src = '/images/ML-flowchart.png' 
 						alt=''
-						width={100}
-						height={100}
-						className="place-items-end "
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} // optional
+						// className="place-items-end"
 						// unoptimized
             // layout = "fill"
 					></Image></CarouselItem>
               <CarouselItem><Image
-						src='/images/portfolio.jpg'
+						src = '/images/ML-flowchart.png' 
 						alt=''
-						width={100}
-						height={100}
-						className="place-items-end "
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} // optional
+						// className="place-items-end"
 						// unoptimized
             // layout = "fill"
 					></Image></CarouselItem>
@@ -140,7 +148,7 @@ export default function Home() {
       </Tabs>
       <br></br>
 
-      <Card className="grid grid-cols-3">
+      <div className="grid grid-cols-2 gap gap-x-5">
         <Card className = "bg-slate-100">
         <CardHeader>
           <CardTitle>Contact</CardTitle>
@@ -151,15 +159,16 @@ export default function Home() {
           <p>Mail_2</p>
         </CardContent>
         </Card>
-        <Card className = "bg-slate-100">
-        <CardHeader>
-          <CardTitle>Statistics</CardTitle>
+        {/* <Card className = "bg-slate-100"> */}
+        {/* <CardHeader> */}
+          {/* <CardTitle>Statistics</CardTitle> */}
           {/* <CardDescription>Card Description</CardDescription> */}
-        </CardHeader>
-        <CardContent>
+        {/* </CardHeader> */}
+        {/* <CardContent> */}
           {/* <p>Card Content</p> */}
-        </CardContent>
-        </Card>
+          
+        {/* </CardContent>
+        </Card> */}
         <Card className = "bg-slate-100">
         <CardHeader>
           <CardTitle>Citation</CardTitle>
@@ -169,7 +178,7 @@ export default function Home() {
           <p>Tang Q, Nie F, Zhao Q, Chen W. A merged molecular representation deep learning method for blood-brain barrier permeability prediction. Brief Bioinform. 2022 Sep 20;23(5):bbac357. doi: 10.1093/bib/bbac357. PMID: 36002937</p>
         </CardContent>
         </Card>
-      </Card>
+      </div>
 
       <br></br>
 
