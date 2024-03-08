@@ -48,7 +48,7 @@ export default function Home() {
         </CardContent>
       </Card> 
       <br></br>
-      <Tabs defaultValue="home" className=" bg-red-200">
+      <Tabs defaultValue="home" className=" bg-red-100">
         <TabsList className="flex justify-center">
           <TabsTrigger value="home">Home</TabsTrigger>
           <TabsTrigger value="services">Services</TabsTrigger>
@@ -139,11 +139,36 @@ export default function Home() {
         </TabsContent>
         <TabsContent value="services">
         <div className="grid w-full max-w-sm items-center gap-1.5">
-      <Label htmlFor="picture">Picture</Label>
-      <Input id="picture" type="file" />
+      <Label htmlFor="picture">Add your picture here</Label>
+      <Input id="picture" type="file"/>
     </div>
         </TabsContent>
-        <TabsContent value="document">Change your document here.</TabsContent>
+        <TabsContent value="document">
+          <div className="px-8">
+            <p className="text-4xl">Cancer and Small molecules</p>
+            <br/>
+            <Card className="bg-red-200 p-6">
+              {/* <CardHeader>
+                <CardTitle>
+                  </CardTitle>
+                </CardHeader> */}
+                {/* <CardContent> */}
+                  <p>ononvontonb</p>
+                  {/* </CardContent> */}
+              </Card>
+            <br/>
+            <Card>
+              <CardHeader  className="bg-blue-200">
+                <CardTitle>title of this card
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>ononvontonb</p>
+                  </CardContent>
+              </Card>
+            </div>
+
+        </TabsContent>
         <TabsContent value="contact">Change your contact here.</TabsContent>
       </Tabs>
       <br></br>
