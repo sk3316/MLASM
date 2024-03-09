@@ -159,7 +159,7 @@ export default function Home() {
             <br/>
             <Card>
               <CardHeader  className="bg-blue-200">
-                <CardTitle>title of this card
+                <CardTitle>Title of this card
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
