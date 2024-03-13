@@ -59,7 +59,7 @@ export default function Home() {
           <Carousel>
             <CarouselContent>
               <CarouselItem><Image
-						src = '/images/ML-flowchart.png' 
+						src = '/images/flowchart.png' 
 						alt=''
 						width={0}
   height={0}
@@ -70,7 +70,7 @@ export default function Home() {
             // layout = "fill"
 					></Image></CarouselItem>
               <CarouselItem><Image
-						src = '/images/ML-flowchart.png' 
+						src = '/images/graph.png' 
 						alt=''
 						width={0}
   height={0}
@@ -81,7 +81,7 @@ export default function Home() {
             // layout = "fill"
 					></Image></CarouselItem>
               <CarouselItem><Image
-						src = '/images/ML-flowchart.png' 
+						src = '/images/graph2.png' 
 						alt=''
 						width={0}
   height={0}
@@ -91,6 +91,18 @@ export default function Home() {
 						// unoptimized
             // layout = "fill"
 					></Image></CarouselItem>
+              <CarouselItem><Image
+						src = '/images/graph3.png' 
+						alt=''
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} // optional
+						// className="place-items-end"
+						// unoptimized
+            // layout = "fill"
+					></Image></CarouselItem>
+              
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
@@ -148,22 +160,37 @@ export default function Home() {
             <p className="text-4xl">Cancer and Small molecules</p>
             <br/>
             <Card className="bg-red-200 p-6">
-              {/* <CardHeader>
-                <CardTitle>
-                  </CardTitle>
-                </CardHeader> */}
-                {/* <CardContent> */}
-                  <p>ononvontonb</p>
-                  {/* </CardContent> */}
+              
+                  <p>Please cite! If you use Deep-B3 for research, please cite the following paper: Deep-B3. If you have any comments, corrections or questions please contact us. All datasets used in this study can be downloaded from here.</p>
+                  
               </Card>
             <br/>
             <Card>
               <CardHeader  className="bg-blue-200">
-                <CardTitle>Title of this card
+                <CardTitle>Model interpretation based on the Morgan fingerprints
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p>ononvontonb</p>
+                <CardContent className = "grid grid-cols-2 gap gap-4 py-4">
+                  <div>
+                    
+                    <Image
+						src = '/images/graph3.png' 
+						alt=''
+						width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} 
+						
+					></Image>
+                    
+                  </div>
+                  <div>
+                  
+                    <p>
+                      hey
+                    </p>
+                    
+                  </div>
                   </CardContent>
               </Card>
             </div>
