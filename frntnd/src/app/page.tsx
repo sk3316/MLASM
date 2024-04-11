@@ -47,7 +47,7 @@ export default function Home() {
           />
         </Card>
         <br></br>
-        <Tabs defaultValue="services" className=" bg-red-100">
+        <Tabs defaultValue="home" className=" bg-red-100">
           <TabsList className="flex justify-center">
             <TabsTrigger value="home">Home</TabsTrigger>
             <TabsTrigger value="services">Services</TabsTrigger>
