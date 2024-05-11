@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,7 +25,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+
+
 export default function Home() {
+  const callAPI = async () => {
+    try {
+      const res = await fetch(`https://jsonplaceholder.typicode.com/posts/1`);
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <main>
       <div className="px-20 bg-purple-900">
@@ -178,7 +191,8 @@ export default function Home() {
                     type="notation"
                     placeholder="For example: CH3CH2CH5CH2CH8"
                   />
-                  <Button type="submit">Submit</Button>
+                  <Button type="submit" onClick={callAPI}>Submit</Button>
+                  {/* here the result will be shown just below the submit button  */}
                 </div>
               </div>
             </div>
